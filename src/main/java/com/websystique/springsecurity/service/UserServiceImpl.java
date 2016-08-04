@@ -8,6 +8,10 @@ import org.springframework.transaction.annotation.Transactional;
 import com.websystique.springsecurity.dao.UserDao;
 import com.websystique.springsecurity.model.User;
 
+/**
+ Define UserDetailsService implementation
+ This service is responsible for providing authentication details to Authentication Manager
+ */
 @Service("userService")
 @Transactional
 public class UserServiceImpl implements UserService{

@@ -11,6 +11,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
+/**
+ * SpringMVC Configuration Class
+ */
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = "com.websystique.springsecurity")
@@ -46,6 +49,18 @@ public class HelloWorldConfiguration extends WebMvcConfigurerAdapter {
     public void addFormatters(FormatterRegistry registry) {
         registry.addConverter(roleToUserProfileConverter);
     }
-    
-    
+
 }
+/*
+*
+* <mvc:annotation-driven conversion-service="conversionService"/>
+
+<bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+
+    <property name="converters">
+        <list>
+            <bean id="roleToUserProfile" class="com.websystique.springsecurity.configuration.RoleToUserProfileConverter" />
+        </list>
+    </property>
+</bean>
+* */
