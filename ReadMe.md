@@ -1,4 +1,4 @@
-#JavaEE_Spring_Security_Demo_00_Bcrypt
+# JavaEE_Spring_Security_Demo_00_Bcrypt
 
 Url: localhost:8080/admin
 Admin Login: User:sam Password:abc125
@@ -6,11 +6,11 @@ Admin Login: User:sam Password:abc125
 PasswordGenerator:Use com.websystique.springsecurity.util.QuickPasswordEncodingGenerator
        to generate Password
 
-##Based on:
+## Based on:
 
 <1>http://websystique.com/spring-security/spring-security-4-password-encoder-bcrypt-example-with-hibernate/
 
-##DB:
+## DB:
 /*All User's gets stored in APP_USER table*/
 create table APP_USER (
    id BIGINT NOT NULL AUTO_INCREMENT,
